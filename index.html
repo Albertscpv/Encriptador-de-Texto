@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/asistente-de-ai.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="flxheader">
+            <h1 class="headerflx"></h1>
+        </div>         
+        <div class="navbar">
+                <nav>
+                    <ul>
+                    <li><a href="https://github.com/Albertscpv"><i class="fa-brands fa-github-alt"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/chrismonge14/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                 </ul>
+                </nav>  
+            </div>  
+    </header> 
+<main>
+    <div class="titulo"><span class="typed"></span></div>
+        <div class="area_reemplazada">    
+            <div class="main">
+                <textarea class="salida" name="message" id="TextArea" cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
+             </div>
+                <div class="main">
+                    <textarea class="salida" name="msg" id="mes" cols="30" rows="10" placeholder="Aqui veras el resultado" readonly></textarea>
+                </div>
+            </div>
+                <p id="parrafo"></p>
+         <div class="flex-btn-container">
+
+            <button onclick="encriptarTexto();" class="flex-btns" id="encriptar">Encriptar</button>
+                <button class="flex-btns" id="copy" onclick="copyText();">Copiar</button>
+                    <button onclick="desencriptarTexto();" class="flex-btns"" id="desencriptar">Desencriptar</button>
+                </div>
+</main>
+<footer>
+    <ul>
+        <li>Christopher Monge</li>
+    </ul>
+</footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+<script src="https://kit.fontawesome.com/d21ee914d1.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,196 @@
+body{
+    background-image: url(bd.jpg);
+    background-size:cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+header{
+    width: 100tvh;
+    padding: 20px 0;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border: 1px solid gray;
+}
+
+.navbar{
+    width: 43tvh;
+    position: relative;
+    margin: 1% 30% 1% 45%;
+}
+
+header .navbar nav ul li {
+    border-right: 1px solid #000000;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+header .navbar nav ul li:last-child {
+    border-right: none;
+}
+nav{
+    position: relative;
+    top: 1px;
+    right: 10px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block; 
+    margin: 15px ;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    transform-origin: bottom right;
+    transition:transform 0.5s ease-out;
+}
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin:bottom left ;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;   
+}
+span{ 
+  font-size: 60px;
+  display: block;
+  font-family: 'Honk';
+}
+
+.area_reemplazada{
+    display: flex;
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    border-radius: 45px;
+    margin: 20px;
+}
+.salida::placeholder{
+  color: black;
+  text-transform:none;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+}
+.main{
+    display: block;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.salida{
+  display: block;
+  padding: 20px 20px;
+  width:55%;
+  margin: 0 auto;
+  background: rgba( 173, 181, 210, 0.7 );
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  border: 1px solid #adb5d2;
+}
+.salida:hover{
+  border:1px solid palegoldenrod;
+}
+
+#mes{
+  margin-left: 12%;
+}
+/* Uso del atributo flex para posicionar las botones en un espacio centrado*/
+.flex-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+  }
+.flex-btns:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+  .flex-btns:nth-child(2){
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-btns:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  .flex-btns{
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+  }
+
+button{
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+
+button:hover{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    box-shadow: 0px 0px 20px 0px;
+    transition-duration: 1s;
+}
+footer li{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    background: rgba( 92, 116, 210, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    padding: 50px 0;
+    color: white;
+    text-transform: none;
+    font-family: 'Times New Roman', Times, serif;
+}
