@@ -1,2 +1,3 @@
-<h1>Challenge Alura #1</h1>
-```Encriptador de Texto```
+# Challenge Encriptador de Texto
+
+En este desafio se hace uso de funciones basicas de desarrollo web para crear un Encriptador de Texto sencillo. 
