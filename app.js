@@ -77,6 +77,3 @@ function copyText(){
     temp.setAttribute('placeholder', 'Texto copiado',)
 }
 
-
-
-

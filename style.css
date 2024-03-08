@@ -56,7 +56,14 @@ a:hover::after{
     transform: scaleX(1);
     transform-origin:bottom left ;
 }
-
+.container-inputs{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  place-content: center;
+  gap: 30px;
+}
 .titulo{
     display: flex;
     justify-content: center;
@@ -70,11 +77,19 @@ span{
 
 .area_reemplazada{
     display: flex;
-    position: relative;
-    width: 100%;
+
     border-radius: 50px;
     border-radius: 45px;
     margin: 20px;
+}
+.salida{
+  display: flex;
+  padding: 20px 20px;
+  background: rgba( 173, 181, 210, 0.7 );
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  border: 1px solid #adb5d2;
 }
 .salida::placeholder{
   color: black;
@@ -92,17 +107,7 @@ span{
     padding: 10px;
 }
 
-.salida{
-  display: block;
-  padding: 20px 20px;
-  width:55%;
-  margin: 0 auto;
-  background: rgba( 173, 181, 210, 0.7 );
-  border: none;
-  border-radius: 12px;
-  resize: none;
-  border: 1px solid #adb5d2;
-}
+
 .salida:hover{
   border:1px solid palegoldenrod;
 }
