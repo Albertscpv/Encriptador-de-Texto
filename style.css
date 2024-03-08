@@ -2,6 +2,7 @@ body{
     background-image: url(bd.jpg);
     background-size:cover;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 
 }
 header{
@@ -17,31 +18,11 @@ header{
 }
 
 .navbar{
-    width:100%;
-    display: flex;
-    justify-items:center;
-    place-content: center;
-}
-
-header .navbar nav ul li {
-    border-right: 1px solid #000000;
-    padding-right: 20px;
-    margin-right: 20px;
-}
-header .navbar nav ul li:last-child {
-    border-right: none;
-}
-nav{
-    position: relative;
-    top: 1px;
-    right: 10px;
-}
-nav ul{
-    list-style: none;
-}
-nav li{
-    display: inline-block; 
-    margin: 15px ;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 nav a{
     text-decoration: none;
@@ -51,6 +32,10 @@ nav a{
     font-weight: bold;
     font-size: 20px;
     color: white;
+}
+.navbar ul li{
+  display: inline-block;
+  margin-inline: 40px;
 }
 a:hover{
     color: white;
@@ -98,6 +83,7 @@ span{
   padding: 50px;
   font-weight: bold;
 }
+
 .main{
     display: block;
     position: relative; 
